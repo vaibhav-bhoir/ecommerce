@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up/In</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+
+    <!-- ---google font---- -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- --font awesome--  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
+      crossorigin="anonymous"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light m-4">
+      <a class="navbar-brand" href="index.html"
+        ><img src="images/logo.png" width="125px" alt="logo"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Product </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">About </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Contact</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              My Account
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">MY Wishlist</a>
+              <a class="dropdown-item" href="#">Compare</a>
+              <a class="dropdown-item" href="cart.html">Checkout</a>
+              <a class="dropdown-item" href="account.html">Login</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- account page  -->
+    <div class="account-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="images/image1.png" width="100%" alt="" />
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-container">
+              <div class="form-btn">
+                <span onclick="login()">Login</span>
+                <span onclick="register()">Register</span>
+                <hr id="Indicator" />
+              </div>
+              <form id="LoginForm">
+                <input
+                  type="text"
+                  placeholder="Username"
+                  required
+                  autocomplete="off"
+                />
+                <input
+                  type="password"
+                  placeholder="Password"
+                  required
+                  autocomplete="off"
+                />
+                <button type="submit" class="btn-sm">Login</button>
+                <br />
+                <a href="#">Forget Password</a>
+              </form>
+
+              <form id="RegForm">
+                <input
+                  type="text"
+                  placeholder="Username"
+                  required
+                  autocomplete="off"
+                />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  required
+                  autocomplete="off"
+                />
+                <input
+                  type="password"
+                  placeholder="Password"
+                  required
+                  autocomplete="off"
+                />
+                <button type="submit" class="btn-sm">
+                  Register
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-12">
+            <h4>Download Our App</h4>
+            <p>Download App for Android Moblie and Ios Mobile</p>
+            <div class="app-logo d-flex">
+              <img
+                class="mx-1"
+                src="images/play-store.png "
+                width="120px"
+                alt=""
+              />
+              <img
+                class="mx-1"
+                src="images/app-store.png "
+                width="120px"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <img class="w-50 my-2" src="images/logo-white.png" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo qui
+              enim aperiam aliquam cum?
+            </p>
+          </div>
+          <div class="col-md-2 col-sm-6 col-12">
+            <h4>Usefull Links</h4>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-sm-6 col-12">
+            <h4>Follow Us</h4>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>YouTube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="copyright text-center">
+          Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          All rights are reserved
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      var LoginForm = document.getElementById("LoginForm");
+      var RegForm = document.getElementById("RegForm");
+      var Indicator = document.getElementById("Indicator");
+
+      function register() {
+        RegForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(100px)";
+      }
+
+      function login() {
+        RegForm.style.transform = "translateX(300px)";
+        LoginForm.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(0px)";
+      }
+    </script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
