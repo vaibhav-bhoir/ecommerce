@@ -1,14 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Hind", sans-serif;
-}
-
-@mixin box-shadow {
-  -webkit-box-shadow: 1px 2px 6px 3px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 1px 2px 6px 3px rgba(0, 0, 0, 0.4);
-  box-shadow: 1px 2px 6px 3px rgba(0, 0, 0, 0.4);
 }
 
 section {
@@ -19,7 +17,7 @@ section {
 button {
   color: #fff;
   background-color: #f8694a;
-  display: block;
+  display: inline-block;
   padding: 8px 12px;
   text-transform: uppercase;
   border-radius: 5px;
@@ -351,9 +349,13 @@ a:hover {
       input {
         width: 100%;
         height: 30px;
+        border-radius: 3px;
         margin: 10px 0;
         padding: 0 10px;
         border: 1px solid #f8694a;
+        &:focus {
+          outline-color: #555;
+        }
       }
       .btn {
         width: 100%;
@@ -376,6 +378,20 @@ a:hover {
       left: 0;
     }
   }
+}
+
+// scroll button
+
+#myBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  background: #f8694a;
+  cursor: pointer;
 }
 
 // @media screen and (max-width: 425px) {

@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +17,7 @@ section {
 button {
   color: #fff;
   background-color: #f8694a;
-  display: block;
+  display: inline-block;
   padding: 8px 12px;
   text-transform: uppercase;
   border-radius: 5px;
@@ -30,8 +34,7 @@ li {
   list-style-type: none;
 }
 
-a,
-a:hover {
+a {
   text-decoration: none;
   color: white;
 }
@@ -371,9 +374,14 @@ a:hover {
 .account-page .form-container form input {
   width: 100%;
   height: 30px;
+  border-radius: 3px;
   margin: 10px 0;
   padding: 0 10px;
   border: 1px solid #f8694a;
+}
+
+.account-page .form-container form input:focus {
+  outline-color: #555;
 }
 
 .account-page .form-container form .btn {
@@ -398,5 +406,17 @@ a:hover {
 
 .account-page .form-container #RegForm {
   left: 0;
+}
+
+#myBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  background: #f8694a;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

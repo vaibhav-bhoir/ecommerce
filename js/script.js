@@ -1,6 +1,7 @@
-//Get the button
+// -----scroll btn js---------
+
 mybutton = document.getElementById("myBtn");
-//when user scroll down 20px  from the top of the document show the button
+//when user scroll down specified px from the top of the document show the button
 window.onscroll = function () {
   scrollFunction();
 };
@@ -21,9 +22,9 @@ function topfunction() {
   document.documentElement.scrollTop = 0; // for chrome,firefox, IE and opera
 }
 
-// product detail page js
+// ------ product detail page js------
+
 var productImg = document.getElementById("productImg");
-// var smallImg = document.getElementsByClassName("small-img");
 var smallImg = document.querySelectorAll(".small-img");
 
 for (let i = 0; i < smallImg.length; i++) {
@@ -32,20 +33,7 @@ for (let i = 0; i < smallImg.length; i++) {
   });
 }
 
-// smallImg[0].onclick = function () {
-//   productImg.src = smallImg[0].src;
-// };
-// smallImg[1].onclick = function () {
-//   productImg.src = smallImg[1].src;
-// };
-// smallImg[2].onclick = function () {
-//   productImg.src = smallImg[2].src;
-// };
-// smallImg[3].onclick = function () {
-//   productImg.src = smallImg[3].src;
-// };
-
-// Account page js
+// -------Account page js-------
 
 var LoginForm = document.getElementById("LoginForm");
 var RegForm = document.getElementById("RegForm");
