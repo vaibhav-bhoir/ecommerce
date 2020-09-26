@@ -85,7 +85,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="cart.html"><i class="fa fa-shopping-cart fa-2x "></i></a>
+            <a class="nav-link" href="#"><i class="fa fa-shopping-cart fa-2x "></i></a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -95,15 +95,15 @@
             placeholder="Search"
             aria-label="Search"
           />
-          <button class=" my-2 my-sm-0" type="submit">
+          <a href="#" class="custom-btn my-2 my-sm-0">
             Search
-          </button>
+          </a>
         </form>
       </div>
     </nav>
 
     <section class="hero">
-      <div class="container">
+      <div class="container"> 
         <div class="row d-flex justify-content-center align-items-center">
           <div class="col-md-5 col-12">
             <h1>
@@ -114,8 +114,9 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Nostrum,
               voluptatum fugiat sunt expedita commodi perferendis.
             </p>
-            <button class="my-3"><a href="#">Explore Now</a></button>
+            <a href="#" class="custom-btn">Explore Now</a>
 
+            <!-- <button class="custom-btn my-3"><a href="#">Explore Now</a></button> -->
           </div>
 
           <div class="col-md-7 col-12">
@@ -143,7 +144,7 @@
                   <div class="carousel-caption d-none d-md-block">
                     <h1 class="font-weight-bold">Bags sale</h1>
                     <h3 class="text-white">Up to 50% Discount</h3>
-                    <button><a href="#">Shop Now</a></button>
+                    <a href="#" class="custom-btn">Shop Now</a>
 
                   </div>
                 </div>
@@ -156,7 +157,7 @@
                   <div class="carousel-caption d-none d-md-block">
                     <h1 class="font-weight-bold">HOT DEAL</h1>
                     <h3 class="text-white">Up to 50% Off</h3>
-                    <button><a href="#">Shop Now</a></button>
+                    <a href="#" class="custom-btn">Shop Now</a>
 
                   </div>
                 </div>
@@ -170,7 +171,7 @@
                     <h1 class="font-weight-bold">
                       New Product Collection
                     </h1>
-                    <button><a href="#">Shop Now</a></button>
+                    <a href="#" class="custom-btn">Shop Now</a>
 
                   </div>
                 </div>
@@ -226,12 +227,12 @@
     <section class=" Featured-Product">
       <div class="container">
         <h2 class="title ">Featured Product</h2>
-        <div class="row">
-          <div class="col-md-3 col-sm-6 p-2">
-              <a href="product-detail.html"><img src="images/product-1.jpg" alt="...">
+        <div class="row shop-items">
+          <div class="col-md-3 col-sm-6 p-2 shop-item">
+              <a href="#"><img src="images/product-1.jpg" class="shop-item-image" alt="...">
               </a>
               <div class="m-3">
-                 <h4>Red Printed T-Shirt</h4>
+                 <h4 class="shop-item-title">Red T-Shirt</h4>
                  <div class="rating">
                    <i class="fa fa-star"></i>
                    <i class="fa fa-star"></i>
@@ -239,24 +240,30 @@
                    <i class="fa fa-star"></i>
                    <i class="fa fa-star-o"></i>
                  </div>
-                 <p class="card-text">$ 50.00</p>
+                 <p class="card-text shop-item-price">$ 50.00</p>
+                 <button class="add-to-cart shop-item-button">
+                  <i class="fa fa-shopping-cart "></i> Add to Cart
+                </button>
               </div>
           </div>
-          <div class="col-md-3 col-sm-6 p-2">
-            <img src="images/product-2.jpg" alt="...">
+          <div class="col-md-3 col-sm-6 p-2 shop-item">
+            <a href="#"><img src="images/product-2.jpg" class="shop-item-image" alt="...">
+            </a>
             <div class="m-3">
-              <h4>Red Printed T-Shirt</h4>
-              <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-              </div>
-              <p class="card-text">$ 50.00</p>
+               <h4 class="shop-item-title">Black HRX Shoes</h4>
+               <div class="rating">
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star-o"></i>
+               </div>
+               <p class="card-text shop-item-price">$ 30.00</p>
+               <button class="add-to-cart shop-item-button">
+                <i class="fa fa-shopping-cart "></i> Add to Cart
+              </button>
             </div>
-              
-          </div>
+        </div>
           <div class="col-md-3 col-sm-6 p-2">
             <img src="images/product-3.jpg" alt="...">
             <div class="m-3">
@@ -269,6 +276,9 @@
                 <i class="fa fa-star-o"></i>
               </div>
               <p class="card-text">$ 50.00</p>
+              <button class="add-to-cart">
+                <i class="fa fa-shopping-cart"></i> Add to Cart
+              </button>
             </div>
               
           </div>
@@ -284,6 +294,9 @@
                 <i class="fa fa-star-o"></i>
               </div>
               <p class="card-text">$ 50.00</p>
+              <button class="add-to-cart">
+                <i class="fa fa-shopping-cart"></i> Add to Cart
+              </button>
             </div>           
           </div>
         </div>
@@ -294,7 +307,7 @@
               <img src="images/off.jpg" class="card-img-top" alt="...">
               <div class="banner-caption ">
                   <h1>NEW<br />COLLECTION</h1>
-                  <button class="text-center"><a href="#">Shop Now</a></button>
+                  <a href="#" class="custom-btn text-center">Shop Now</a>
         
               </div>
           </div>
@@ -422,7 +435,7 @@
               Quibusdam  <br> aspernatur odit culpa ad eius! Eveniet, perferendis
               suscipit.
             </p>
-            <button><a href="#">Buy Now</a></button>
+            <a href="#" class="custom-btn">Buy Now</a></button>
 
           </div>
         </div>
@@ -501,7 +514,9 @@
       </div>
     </footer>
 
+    <script src="js/store.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/onscroll.js"></script>
 
         
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
